@@ -11,7 +11,7 @@ module.exports = {
         use: ['babel-loader', 'eslint-loader'],
       },
       {
-        test: /\.(svg|png|jpg|jpeg|gif)$/,
+        test: /\.(png|jpg|jpeg|gif)$/,
         use: {
           loader: 'file-loader',
           options: {
@@ -19,6 +19,10 @@ module.exports = {
             outputPath: 'assets',
           },
         },
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack', 'url-loader'],
       },
     ],
   },
