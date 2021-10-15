@@ -1,0 +1,114 @@
+//------------------
+//  element
+//  variant
+//  theme
+//------------------
+
+//-------------------
+// Palette
+//-------------------
+$white: hsl(0, 0%, 100%);
+$cornflower-blue: hsl(252, 94%, 67%);
+$heliotrope: hsl(252, 100%, 73%);
+$mirage: #1e2139;
+$ebony-clay: hsl(233, 30%, 21%);
+$selago: hsl(231, 73%, 93%);
+$bali-hai: hsl(231, 20%, 61%);
+$ship-cove: hsl(231, 37%, 63%);
+$vulcan: hsl(228, 29%, 7%);
+$burnt-sienna: hsl(0, 80%, 63%);
+$american-pink: hsl(0, 100%, 80%);
+$ghost-white: hsl(240, 27%, 98%);
+$eerie-black: hsl(233, 30%, 11%);
+$charcoal: hsl(231, 20%, 27%);
+$eucalyptus: hsl(160, 67%, 52%);
+$dark-orange: hsl(34, 100%, 50%);
+
+//-------------------
+// App
+//-------------------
+$app-bg: $ghost-white;
+$app-bg-dark: $eerie-black;
+$app-text-primary: $vulcan;
+$app-text-primary-dark: $white;
+$app-text-secondary: $bali-hai;
+$app-text-secondary-dark: $white;
+
+//-------------------
+// Button
+//-------------------
+$btn-primary: $cornflower-blue;
+$btn-primary-dark: $cornflower-blue;
+$btn-secondary: $ghost-white;
+$btn-secondary-dark: $ebony-clay;
+$btn-danger: $burnt-sienna;
+$btn-danger-dark: $burnt-sienna;
+$btn-tertiary: $eerie-black;
+$btn-tertiary-dark: $eerie-black;
+$btn-primary-label: $white;
+$btn-primary-label-dark: $white;
+$btn-secondary-label: $ship-cove;
+$btn-secondary-label-dark: $selago;
+$btn-tertiary-label: $selago;
+$btn-tertiary-label-dark: $selago;
+$btn-toggle-theme: $ship-cove;
+$btn-toggle-theme-dark: $ship-cove;
+
+//-------------------
+// Appbar
+//-------------------
+$appbar-bg: $mirage;
+
+//-------------------
+// List
+//-------------------
+$list-header-label-primary: $vulcan;
+$list-header-label-secondary: $bali-hai;
+$list-header-label-primary-dark: $white;
+$list-header-label-secondary-dark: $selago;
+$list-item-bg: $white;
+$list-item-dark: $mirage;
+$list-item-label-primary: $vulcan;
+$list-item-label-secondary: $bali-hai;
+$list-item-label-secondary-dark: $selago;
+
+//-------------------
+// Badge
+//-------------------
+$status-badge-paid-label: $eucalyptus;
+$status-badge-paid-bg: $eucalyptus;
+$status-badge-paid-bg-dark: $eucalyptus;
+$status-badge-pending-label: $dark-orange;
+$status-badge-pending-bg: $dark-orange;
+$status-badge-pending-bg-dark: $dark-orange;
+$status-badge-draft-label: $selago;
+$status-badge-draft-bg: $charcoal;
+$status-badge-draft-label: $selago;
+$status-badge-draft-label-dark: $selago;
+$status-badge-draft-bg-dark: $charcoal;
+
+//-------------------
+// Icons
+//-------------------
+$arrow-icon: $cornflower-blue;
+
+//-------------------
+// Forms
+//-------------------
+$form-header-primary: $vulcan;
+$form-header-secondary: $bali-hai;
+$form-section-header: $cornflower-blue;
+$form-input-label: $ship-cove;
+$form-input-text: $vulcan;
+$form-header-dark: $vulcan;
+$form-section-header-dark: $cornflower-blue;
+
+//-------------------
+// Modal
+//-------------------
+$modal-header: $vulcan;
+$modal-bg: $charcoal;
+$modal-message: $bali-hai;
+$modal-header-dark: $white;
+$modal-bg: $mirage;
+$modal-message: $bali-hai;

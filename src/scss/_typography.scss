@@ -1,0 +1,91 @@
+// font-family
+$font-family: 'Spartan', sans-serif;
+$html-font-size: 16px;
+
+// font-weight
+$medium: 500;
+$bold: 700;
+
+$line-height: 1.5;
+
+// font-sizes, line and letter spacing
+$body1-font-sizes: (
+  null: (
+    rem(12),
+    rem(15),
+    rem(0.25),
+  ),
+);
+
+$body2-font-sizes: (
+  null: (
+    rem(11),
+    rem(18),
+    rem(0.23),
+  ),
+);
+
+$h1-font-sizes: (
+  null: (
+    rem(32),
+    rem(36),
+    rem(1),
+  ),
+);
+
+$h2-font-sizes: (
+  null: (
+    rem(20),
+    rem(22),
+    rem(0.63),
+  ),
+);
+
+$h3-font-sizes: (
+  null: (
+    rem(16),
+    rem(24),
+    rem(0.8),
+  ),
+);
+
+$h4-font-sizes: (
+  null: (
+    rem(12),
+    rem(15),
+    rem(0.25),
+  ),
+);
+
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  xlarge: 1440px,
+);
+
+@mixin make-font-size($fs-font-size) {
+  @if type-of($fs-font-size) == 'list' {
+    font-size: nth($fs-font-size, 1);
+    @if (length($fs-font-size) > 1) {
+      line-height: nth($fs-font-size, 2);
+      letter-spacing: nth($fs-font-size, 3);
+    }
+  } @else {
+    font-size: $fs-font-size;
+  }
+}
+
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      @include make-font-size($fs-font-size);
+    } @else {
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-font-size($fs-font-size);
+      }
+    }
+  }
+}
