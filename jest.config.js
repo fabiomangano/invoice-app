@@ -1,4 +1,5 @@
 module.exports = {
+  testEnvironment: 'jsdom',
   clearMocks: true,
   collectCoverageFrom: ['src/**/*.{js,jsx}'],
   coverageDirectory: 'coverage',
