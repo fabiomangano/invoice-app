@@ -37,20 +37,22 @@ $app-text-secondary-dark: $white;
 //-------------------
 // Button
 //-------------------
-$btn-primary: $cornflower-blue;
-$btn-primary-dark: $cornflower-blue;
-$btn-secondary: $ghost-white;
-$btn-secondary-dark: $ebony-clay;
-$btn-danger: $burnt-sienna;
-$btn-danger-dark: $burnt-sienna;
-$btn-tertiary: $eerie-black;
-$btn-tertiary-dark: $eerie-black;
+$btn-bg-primary: $cornflower-blue;
+$btn-bg-primary-dark: $cornflower-blue;
+$btn-bg-secondary: $ghost-white;
+$btn-bg-secondary-dark: $ebony-clay;
+$btn-bg-danger: $burnt-sienna;
+$btn-bg-danger-dark: $burnt-sienna;
+$btn-bg-tertiary: $eerie-black;
+$btn-bg-tertiary-dark: $eerie-black;
 $btn-primary-label: $white;
 $btn-primary-label-dark: $white;
 $btn-secondary-label: $ship-cove;
 $btn-secondary-label-dark: $selago;
 $btn-tertiary-label: $selago;
 $btn-tertiary-label-dark: $selago;
+$btn-danger-label: $white;
+$btn-danger-label-dark: $white;
 $btn-toggle-theme: $ship-cove;
 $btn-toggle-theme-dark: $ship-cove;
 
