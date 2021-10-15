@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import placeHolderAvatar from '../../assets/image-avatar.jpg';
+import placeholderAvatar from '../../assets/image-avatar.jpg';
 import './Avatar.style.scss';
 
 const Avatar = ({ src, size, alt }) => (
@@ -9,7 +9,7 @@ const Avatar = ({ src, size, alt }) => (
 
 Avatar.defaultProps = {
   size: 'medium',
-  src: placeHolderAvatar,
+  src: placeholderAvatar,
 };
 
 Avatar.propTypes = {
