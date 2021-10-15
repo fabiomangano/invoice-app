@@ -1,0 +1,39 @@
+@import '../scss/index';
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  @include font-size($body1-font-sizes);
+  font-family: $font-family;
+  line-height: $line-height;
+  font-weight: $medium;
+}
+
+h1 {
+  @include font-size($h1-font-sizes);
+  font-weight: $bold;
+}
+
+h2 {
+  @include font-size($h2-font-sizes);
+  font-weight: $bold;
+}
+
+h3 {
+  @include font-size($h3-font-sizes);
+  font-weight: $bold;
+}
+
+h4 {
+  @include font-size($h4-font-sizes);
+  font-weight: $bold;
+}
