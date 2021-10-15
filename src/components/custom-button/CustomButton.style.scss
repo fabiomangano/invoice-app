@@ -1,0 +1,43 @@
+@import '../../scss/index';
+
+.btn {
+  color: $white;
+  border-radius: 50px;
+  padding: rem(16) rem(24);
+
+  &--primary {
+    color: $btn-primary-label;
+    background-color: $btn-bg-primary;
+  }
+
+  &--secondary {
+    color: $btn-secondary-label;
+    background-color: $btn-bg-secondary;
+  }
+
+  &--tertiary {
+    color: $btn-tertiary-label;
+    background-color: $btn-bg-tertiary;
+  }
+
+  &--danger {
+    color: $btn-danger-label;
+    background-color: $btn-bg-danger;
+  }
+
+  &--small {
+    width: rem(73);
+  }
+
+  &--medium {
+    width: rem(89);
+  }
+
+  &--large {
+    width: rem(131);
+  }
+
+  &--fluid {
+    width: 100%;
+  }
+}
