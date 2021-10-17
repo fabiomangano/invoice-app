@@ -1,0 +1,14 @@
+@import '../../../scss/index';
+
+.divider {
+  background-color: $appbar-vertical-divider;
+  float: left;
+  &--horizontal {
+    width: rem(0.5);
+    height: inherit;
+  }
+  &--vertical {
+    height: rem(0.5);
+    width: inherit;
+  }
+}

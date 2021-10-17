@@ -1,0 +1,11 @@
+.menu {
+  display: flex;
+  &--horizontal {
+    height: inherit;
+    align-items: center;
+  }
+  &--vertical {
+    width: inherit;
+    flex-direction: column;
+  }
+}
