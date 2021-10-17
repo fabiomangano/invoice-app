@@ -4,30 +4,19 @@ import cn from 'classnames';
 import Menu from './menu/Menu';
 import Option from './option/Option';
 import Divider from './divider/Divider';
-import Avatar from '../avatar/Avatar';
-import ToggleTheme from '../toggle-theme/ToggleTheme';
-import Logo from '../logo/Logo';
 import './Appbar.style.scss';
 
 export const Context = React.createContext();
 
-const Appbar = ({ variant }) => (
+const Appbar = ({ children, variant }) => (
   <Context.Provider value={variant}>
-    <div className={cn('appbar', `appbar--${variant}`)}>
-      <Logo />
-      <Menu>
-        <Option>
-          <ToggleTheme theme="dark" setTheme={() => {}} />
-        </Option>
-        <Divider />
-        <Option>
-          <Avatar alt="Profile img" />
-        </Option>
-        <Divider />
-      </Menu>
-    </div>
+    <div className={cn('appbar', `appbar--${variant}`)}>{children}</div>
   </Context.Provider>
 );
+
+Appbar.Menu = Menu;
+Appbar.Option = Option;
+Appbar.Divider = Divider;
 
 Appbar.defaultProps = {
   variant: 'horizontal',
@@ -35,6 +24,7 @@ Appbar.defaultProps = {
 
 Appbar.propTypes = {
   variant: PropTypes.oneOf(['horizontal', 'vertical']),
+  children: PropTypes.node.isRequired,
 };
 
 export default Appbar;
