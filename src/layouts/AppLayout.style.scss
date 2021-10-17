@@ -1,0 +1,10 @@
+.applayout {
+  display: flex;
+  min-height: 100vh;
+  &--horizontal {
+    flex-direction: row;
+  }
+  &--vertical {
+    flex-direction: column;
+  }
+}
