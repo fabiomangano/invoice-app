@@ -7,7 +7,11 @@ import './CustomButton.style.scss';
 
 const CustomButton = ({ children, type, onClick, variant, size }) => (
   <button
-    className={cn('btn', `btn--${variant}`, `btn--${size}`)}
+    className={cn(
+      'custom-btn',
+      `custom-btn--${variant}`,
+      `custom-btn--${size}`,
+    )}
     type={type}
     onClick={onClick}
   >
