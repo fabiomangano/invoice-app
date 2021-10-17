@@ -1,0 +1,24 @@
+@import '../../scss/index';
+
+.appbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $appbar-bg;
+  height: rem(72);
+  &__menu {
+    display: flex;
+    height: inherit;
+    align-items: center;
+  }
+  &__option {
+    width: rem(80);
+    text-align: center;
+  }
+  &__divider {
+    width: rem(0.5);
+    height: inherit;
+    float: left;
+    background-color: $appbar-vertical-divider;
+  }
+}
