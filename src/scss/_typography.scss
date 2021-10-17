@@ -58,9 +58,9 @@ $h4-font-sizes: (
 );
 
 $breakpoints: (
-  small: 480px,
-  medium: 768px,
-  xlarge: 1440px,
+  small: rem($breakpoint-small) rem,
+  medium: rem($breakpoint-medium) rem,
+  xlarge: rem($breakpoint-xlarge) rem,
 );
 
 @mixin make-font-size($fs-font-size) {
