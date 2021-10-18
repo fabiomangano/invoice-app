@@ -2,7 +2,9 @@
 
 .appbar {
   display: flex;
-  background-color: $appbar-bg;
+  @include themed() {
+    background-color: t('appbar-bg');
+  }
   &--horizontal {
     height: rem(72);
     align-items: center;

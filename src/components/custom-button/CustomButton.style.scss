@@ -2,27 +2,36 @@
 
 .custom-btn {
   color: $white;
-  border-radius: 50px;
+  border-radius: rem(50);
   padding: rem(16) rem(24);
+  cursor: pointer;
 
   &--primary {
-    color: $btn-primary-label;
-    background-color: $btn-bg-primary;
+    @include themed() {
+      color: t('btn-primary-label');
+      background-color: t('btn-bg-primary');
+    }
   }
 
   &--secondary {
-    color: $btn-secondary-label;
-    background-color: $btn-bg-secondary;
+    @include themed() {
+      color: t('btn-secondary-label');
+      background-color: t('btn-bg-secondary');
+    }
   }
 
   &--tertiary {
-    color: $btn-tertiary-label;
-    background-color: $btn-bg-tertiary;
+    @include themed() {
+      color: t('btn-tertiary-label');
+      background-color: t('btn-bg-tertiary');
+    }
   }
 
   &--danger {
-    color: $btn-danger-label;
-    background-color: $btn-bg-danger;
+    @include themed() {
+      color: t('btn-danger-label');
+      background-color: t('btn-bg-danger');
+    }
   }
 
   &--small {

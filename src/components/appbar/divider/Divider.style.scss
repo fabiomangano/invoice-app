@@ -1,7 +1,9 @@
 @import '../../../scss/index';
 
 .divider {
-  background-color: $appbar-vertical-divider;
+  @include themed() {
+    background-color: t('appbar-vertical-divider');
+  }
   float: left;
   &--horizontal {
     width: rem(0.5);
