@@ -1,0 +1,69 @@
+@import '../../scss/index';
+
+.status-badge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: rem(104);
+  height: rem(40);
+  font-weight: bold;
+
+  &__background {
+    &--paid {
+      @include themed() {
+        background-color: t('status-badge-paid-bg');
+      }
+    }
+    &--pending {
+      @include themed() {
+        background-color: t('status-badge-pending-bg');
+      }
+    }
+    &--draft {
+      @include themed() {
+        background-color: t('status-badge-draft-bg');
+      }
+    }
+  }
+
+  &__label {
+    &--paid {
+      @include themed() {
+        color: t('status-badge-paid-label');
+      }
+    }
+    &--pending {
+      @include themed() {
+        color: t('status-badge-pending-label');
+      }
+    }
+    &--draft {
+      @include themed() {
+        color: t('status-badge-draft-label');
+      }
+    }
+  }
+
+  &__circle {
+    width: rem(8);
+    height: rem(8);
+    border-radius: 100%;
+    margin: rem(20) rem(8);
+    &--paid {
+      @include themed() {
+        background-color: t('status-badge-paid-circle');
+      }
+    }
+    &--pending {
+      @include themed() {
+        background-color: t('status-badge-pending-circle');
+      }
+    }
+    &--draft {
+      @include themed() {
+        background-color: t('status-badge-draft-circle');
+      }
+    }
+  }
+}

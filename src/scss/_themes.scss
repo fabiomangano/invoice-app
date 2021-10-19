@@ -7,22 +7,25 @@
 //-------------------
 // Palette
 //-------------------
-$white: hsl(0, 0%, 100%);
-$cornflower-blue: hsl(252, 94%, 67%);
-$heliotrope: hsl(252, 100%, 73%);
+$white: #ffffff;
+$cornflower-blue: #7b5cfa;
+$heliotrope: #9175ff;
 $mirage: #1e2139;
-$ebony-clay: hsl(233, 30%, 21%);
-$selago: hsl(231, 73%, 93%);
-$bali-hai: hsl(231, 20%, 61%);
-$ship-cove: hsl(231, 37%, 63%);
-$vulcan: hsl(228, 29%, 7%);
-$burnt-sienna: hsl(0, 80%, 63%);
-$american-pink: hsl(0, 100%, 80%);
-$ghost-white: hsl(240, 27%, 98%);
-$eerie-black: hsl(233, 30%, 11%);
-$charcoal: hsl(231, 20%, 27%);
-$eucalyptus: hsl(160, 67%, 52%);
-$dark-orange: hsl(34, 100%, 50%);
+$ebony-clay: #252946;
+$selago: #e0e4fa;
+$bali-hai: #888eaf;
+$ship-cove: #7e88c4;
+$vulcan: #0d0f17;
+$burnt-sienna: #ec5555;
+$american-pink: #ff9999;
+$ghost-white: #f9f9fb;
+$eerie-black: #141624;
+$charcoal: #373b53;
+$eucalyptus: #33d7a0;
+$dark-orange: #ff9100;
+$white-ice: #f3fdfa;
+$bridal-heath: #fff9f0;
+$athens-gray: #f4f4f5;
 
 $themes: (
   light: (
@@ -48,11 +51,14 @@ $themes: (
     list-item-label-primary: $vulcan,
     list-item-label-secondary: $bali-hai,
     status-badge-paid-label: $eucalyptus,
-    status-badge-paid-bg: $eucalyptus,
+    status-badge-paid-bg: $white-ice,
+    status-badge-paid-circle: $eucalyptus,
     status-badge-pending-label: $dark-orange,
-    status-badge-pending-bg: $dark-orange,
-    status-badge-draft-label: $selago,
-    status-badge-draft-bg: $charcoal,
+    status-badge-pending-bg: $bridal-heath,
+    status-badge-pending-circle: $dark-orange,
+    status-badge-draft-label: $charcoal,
+    status-badge-draft-bg: $athens-gray,
+    status-badge-draft-circle: $charcoal,
     arrow-icon: $cornflower-blue,
     form-header-primary: $vulcan,
     form-header-secondary: $bali-hai,
@@ -86,10 +92,15 @@ $themes: (
     list-item: $mirage,
     list-item-label-primary: $vulcan,
     list-item-label-secondary: $selago,
+    status-badge-paid-label: $eucalyptus,
+    status-badge-paid-bg: $white-ice,
+    status-badge-paid-circle: $eucalyptus,
+    status-badge-pending-label: $dark-orange,
     status-badge-pending-bg: $dark-orange,
-    status-badge-paid-bg: $eucalyptus,
+    status-badge-pending-circle: $dark-orange,
     status-badge-draft-label: $selago,
     status-badge-draft-bg: $charcoal,
+    status-badge-draft-circle: $charcoal,
     arrow-icon: $cornflower-blue,
     form-header-primary: $vulcan,
     form-header-secondary: $bali-hai,
