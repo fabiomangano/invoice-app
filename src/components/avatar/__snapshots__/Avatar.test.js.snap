@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar should render an avatar with a placeholder image 1`] = `
+<img
+  alt="image"
+  className="avatar"
+  src="test-file-stub"
+/>
+`;
