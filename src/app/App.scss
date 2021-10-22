@@ -12,10 +12,16 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   @include font-size($body1-font-sizes);
   font-family: $font-family;
   line-height: $line-height;
   font-weight: $medium;
+  @include themed {
+    background-color: t('app-bg');
+  }
+  min-height: 100vh;
 }
 
 h1 {
