@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Custom Button should render a custom button with default props 1`] = `
+<button
+  className="custom-btn custom-btn--primary custom-btn--medium"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Default Button
+</button>
+`;
+
+exports[`Custom Button should render a danger button 1`] = `
+<button
+  className="custom-btn custom-btn--danger custom-btn--medium"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Primary Button
+</button>
+`;
+
+exports[`Custom Button should render a fluid button 1`] = `
+<button
+  className="custom-btn custom-btn--primary custom-btn--fluid"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Primary Button
+</button>
+`;
+
+exports[`Custom Button should render a large button 1`] = `
+<button
+  className="custom-btn custom-btn--primary custom-btn--large"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Primary Button
+</button>
+`;
+
+exports[`Custom Button should render a medium button 1`] = `
+<button
+  className="custom-btn custom-btn--primary custom-btn--medium"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Primary Button
+</button>
+`;
+
+exports[`Custom Button should render a primary button 1`] = `
+<button
+  className="custom-btn custom-btn--primary custom-btn--medium"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Primary Button
+</button>
+`;
+
+exports[`Custom Button should render a secondary button 1`] = `
+<button
+  className="custom-btn custom-btn--secondary custom-btn--medium"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Primary Button
+</button>
+`;
+
+exports[`Custom Button should render a small button 1`] = `
+<button
+  className="custom-btn custom-btn--primary custom-btn--small"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Primary Button
+</button>
+`;
+
+exports[`Custom Button should render a tertiary button 1`] = `
+<button
+  className="custom-btn custom-btn--tertiary custom-btn--medium"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Primary Button
+</button>
+`;
