@@ -16,7 +16,7 @@ exports[`Custom Button should render a danger button 1`] = `
   onClick={[MockFunction]}
   type="button"
 >
-  Primary Button
+  Danger Button
 </button>
 `;
 
@@ -26,7 +26,7 @@ exports[`Custom Button should render a fluid button 1`] = `
   onClick={[MockFunction]}
   type="button"
 >
-  Primary Button
+  Fluid Button
 </button>
 `;
 
@@ -36,7 +36,7 @@ exports[`Custom Button should render a large button 1`] = `
   onClick={[MockFunction]}
   type="button"
 >
-  Primary Button
+  Large Button
 </button>
 `;
 
@@ -46,7 +46,7 @@ exports[`Custom Button should render a medium button 1`] = `
   onClick={[MockFunction]}
   type="button"
 >
-  Primary Button
+  Medium Button
 </button>
 `;
 
@@ -66,7 +66,7 @@ exports[`Custom Button should render a secondary button 1`] = `
   onClick={[MockFunction]}
   type="button"
 >
-  Primary Button
+  Secondary Button
 </button>
 `;
 
@@ -76,7 +76,7 @@ exports[`Custom Button should render a small button 1`] = `
   onClick={[MockFunction]}
   type="button"
 >
-  Primary Button
+  Small Button
 </button>
 `;
 
@@ -86,6 +86,6 @@ exports[`Custom Button should render a tertiary button 1`] = `
   onClick={[MockFunction]}
   type="button"
 >
-  Primary Button
+  Tertiary Button
 </button>
 `;
