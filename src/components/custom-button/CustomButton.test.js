@@ -41,7 +41,7 @@ describe('Custom Button', () => {
     Renderer.act(() => {
       tree = Renderer.create(
         <CustomButton onClick={onClick} variant="secondary">
-          Primary Button
+          Secondary Button
         </CustomButton>,
       );
     });
@@ -53,7 +53,7 @@ describe('Custom Button', () => {
     Renderer.act(() => {
       tree = Renderer.create(
         <CustomButton onClick={onClick} variant="tertiary">
-          Primary Button
+          Tertiary Button
         </CustomButton>,
       );
     });
@@ -65,7 +65,7 @@ describe('Custom Button', () => {
     Renderer.act(() => {
       tree = Renderer.create(
         <CustomButton onClick={onClick} variant="danger">
-          Primary Button
+          Danger Button
         </CustomButton>,
       );
     });
@@ -77,7 +77,7 @@ describe('Custom Button', () => {
     Renderer.act(() => {
       tree = Renderer.create(
         <CustomButton onClick={onClick} size="small">
-          Primary Button
+          Small Button
         </CustomButton>,
       );
     });
@@ -89,7 +89,7 @@ describe('Custom Button', () => {
     Renderer.act(() => {
       tree = Renderer.create(
         <CustomButton onClick={onClick} size="medium">
-          Primary Button
+          Medium Button
         </CustomButton>,
       );
     });
@@ -101,7 +101,7 @@ describe('Custom Button', () => {
     Renderer.act(() => {
       tree = Renderer.create(
         <CustomButton onClick={onClick} size="large">
-          Primary Button
+          Large Button
         </CustomButton>,
       );
     });
@@ -113,7 +113,7 @@ describe('Custom Button', () => {
     Renderer.act(() => {
       tree = Renderer.create(
         <CustomButton onClick={onClick} size="fluid">
-          Primary Button
+          Fluid Button
         </CustomButton>,
       );
     });
