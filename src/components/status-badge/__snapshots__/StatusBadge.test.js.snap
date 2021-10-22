@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusBagde should render a badge for the draft status 1`] = `
+<div
+  className="status-badge status-badge__background--draft"
+>
+  <div
+    className="status-badge__circle status-badge__circle--draft"
+  />
+  <span
+    className="status-badge__label--draft"
+  >
+    Draft
+  </span>
+</div>
+`;
+
+exports[`StatusBagde should render a badge for the paid status 1`] = `
+<div
+  className="status-badge status-badge__background--paid"
+>
+  <div
+    className="status-badge__circle status-badge__circle--paid"
+  />
+  <span
+    className="status-badge__label--paid"
+  >
+    Paid
+  </span>
+</div>
+`;
+
+exports[`StatusBagde should render a badge for the pending status 1`] = `
+<div
+  className="status-badge status-badge__background--pending"
+>
+  <div
+    className="status-badge__circle status-badge__circle--pending"
+  />
+  <span
+    className="status-badge__label--pending"
+  >
+    Pending
+  </span>
+</div>
+`;
