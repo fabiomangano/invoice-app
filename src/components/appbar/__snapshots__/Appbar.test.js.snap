@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Appbar should render a vertical Appbar 1`] = `
+<div
+  className="appbar appbar--vertical"
+>
+  <svg />
+  <div
+    className="menu menu--vertical"
+  >
+    <div
+      className="option option--vertical"
+    >
+      <button
+        type="button"
+      >
+        toggleTheme
+      </button>
+    </div>
+    <hr
+      className="divider divider--vertical"
+    />
+    <div
+      className="option option--vertical"
+    >
+      <svg />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Appbar should render an horizontal Appbar 1`] = `
+<div
+  className="appbar appbar--horizontal"
+>
+  <svg />
+  <div
+    className="menu menu--horizontal"
+  >
+    <div
+      className="option option--horizontal"
+    >
+      <button
+        type="button"
+      >
+        toggleTheme
+      </button>
+    </div>
+    <hr
+      className="divider divider--horizontal"
+    />
+    <div
+      className="option option--horizontal"
+    >
+      <svg />
+    </div>
+  </div>
+</div>
+`;
