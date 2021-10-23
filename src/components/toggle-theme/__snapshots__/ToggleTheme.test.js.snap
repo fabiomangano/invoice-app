@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleTheme should render correctly the theme button 1`] = `
+<button
+  className="toggle-theme"
+  onClick={[MockFunction]}
+  type="button"
+>
+  <IconMock />
+</button>
+`;
