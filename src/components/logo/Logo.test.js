@@ -3,7 +3,7 @@ import Renderer from 'react-test-renderer';
 import Logo from './Logo';
 
 describe('Logo', () => {
-  it.skip('Should render correctly the main app logo', () => {
+  it('Should render correctly the main app logo', () => {
     let tree;
     Renderer.act(() => {
       tree = Renderer.create(<Logo />);
