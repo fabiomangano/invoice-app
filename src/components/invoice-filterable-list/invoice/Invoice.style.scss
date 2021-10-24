@@ -1,0 +1,65 @@
+@import '../../../scss/index';
+
+.invoice {
+  max-width: inherit;
+  border-radius: rem(8);
+  padding: rem(20);
+  @include themed() {
+    background-color: t('list-item-bg');
+  }
+  &__label--primary {
+    @include themed() {
+      color: t('list-item-label-primary');
+      font-weight: bold;
+    }
+  }
+  &__label--secondary {
+    @include themed() {
+      color: t('list-item-label-secondary');
+    }
+  }
+  @media screen and (max-width: rem(767)) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    grid-auto-flow: row;
+    grid-template-areas:
+      'id . customer'
+      'date . status'
+      'amount . status';
+    height: rem(134);
+    &__id {
+      grid-area: id;
+      font-size: rem(15);
+    }
+    &__customer {
+      grid-area: customer;
+    }
+    &__date {
+      grid-area: date;
+      align-self: end;
+    }
+    &__amount {
+      grid-area: amount;
+      font-size: rem(15);
+    }
+    &__status {
+      grid-area: status;
+      align-self: left;
+    }
+  }
+  @media screen and (min-width: rem(768)) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'id date customer amount status';
+    place-items: center;
+    &__status {
+      align-self: center;
+    }
+    &__date {
+      align-self: center;
+    }
+  }
+}

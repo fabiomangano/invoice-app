@@ -1,0 +1,14 @@
+@import '../../../scss/';
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    font-size: rem(20);
+    font-weight: bold;
+  }
+  &__count {
+    font-size: rem(12);
+    font-weight: bold;
+  }
+}

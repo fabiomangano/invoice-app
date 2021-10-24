@@ -1,0 +1,10 @@
+@import '../../../scss/index';
+
+.filterable-list {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: rem(32);
+  }
+}
