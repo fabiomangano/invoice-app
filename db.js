@@ -1,0 +1,51 @@
+export default [
+  {
+    id: '#RT500221',
+    customer: 'Mario Bianchi',
+    date: '13/12/2022',
+    amount: '1500',
+    status: 'paid',
+  },
+  {
+    id: '#RT302122',
+    customer: 'Luca Rossi',
+    date: '13/12/2022',
+    amount: '1450',
+    status: 'pending',
+  },
+  {
+    id: '#RT302123',
+    customer: 'Roberto Verdi',
+    date: '13/12/2022',
+    amount: '1400',
+    status: 'pending',
+  },
+  {
+    id: '#RT302124',
+    customer: 'Giovanni Russo',
+    date: '13/12/2022',
+    amount: '10400',
+    status: 'pending',
+  },
+  {
+    id: '#RT500226d',
+    customer: 'Ale Baldi',
+    date: '13/12/2022',
+    amount: '11500',
+    status: 'draft',
+  },
+  {
+    id: '#ZT500226d',
+    customer: 'Ale Baldi',
+    date: '13/12/2022',
+    amount: '11500',
+    status: 'draft',
+  },
+  {
+    id: '#HT500226d',
+    customer: 'Ale Baldi',
+    date: '13/12/2022',
+    amount: '11500',
+    status: 'draft',
+  },
+];
