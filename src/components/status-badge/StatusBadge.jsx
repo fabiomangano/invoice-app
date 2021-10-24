@@ -3,6 +3,12 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 import './StatusBadge.style.scss';
 
+export const STATUS = {
+  PENDING: 'pending',
+  PAID: 'paid',
+  DRAFT: 'draft',
+};
+
 const StatusBadge = ({ children, variant }) => (
   <div className={cn('status-badge', `status-badge__background--${variant}`)}>
     <div
