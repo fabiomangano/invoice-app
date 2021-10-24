@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useMediaQuery } from 'react-responsive';
 import cn from 'classnames';
 import { ThemeContext } from '../components/theme-provider/ThemeProvider';
+import { mobile } from '../mediaQueries';
 import Appbar from '../components/appbar/Appbar';
 import ToggleTheme from '../components/toggle-theme/ToggleTheme';
 import Avatar from '../components/avatar/Avatar';
 import Logo from '../components/logo/Logo';
 import './AppLayout.style.scss';
 
-const AppLayout = ({ children, isMobile }) => {
+const AppLayout = ({ children }) => {
   const { theme, toggleTheme } = React.useContext(ThemeContext);
+  const isMobile = useMediaQuery(mobile);
+  const layout = isMobile ? 'applayout--vertical' : 'applayout--horizontal';
+
   return (
-    <div
-      className={cn(
-        'applayout',
-        isMobile ? 'applayout--vertical' : 'applayout--horizontal',
-      )}
-    >
+    <div className={cn('applayout', layout)}>
       <Appbar variant={isMobile ? 'horizontal' : 'vertical'}>
         <Logo />
         <Appbar.Menu>
@@ -29,14 +29,13 @@ const AppLayout = ({ children, isMobile }) => {
           </Appbar.Option>
         </Appbar.Menu>
       </Appbar>
-      <div className={cn('applayout', 'applayout--vertical')}>{children}</div>
+      <div className={cn('applayout', layout)}>{children}</div>
     </div>
   );
 };
 
 AppLayout.propTypes = {
   children: PropTypes.node.isRequired,
-  isMobile: PropTypes.bool.isRequired,
 };
 
 export default AppLayout;

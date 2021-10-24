@@ -1,10 +1,15 @@
+@import '../scss//index';
+
 .applayout {
   display: flex;
-  min-height: 100vh;
   &--horizontal {
+    width: 100%;
     flex-direction: row;
+    min-height: 100vh;
   }
   &--vertical {
+    width: 100%;
     flex-direction: column;
+    min-height: calc(100vh - 72px);
   }
 }
