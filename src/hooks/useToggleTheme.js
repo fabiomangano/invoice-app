@@ -5,13 +5,11 @@ const useToggleTheme = () => {
 
   const toggleTheme = () => {
     if (theme === 'light') {
-      setTheme('dark');
-      document.body.classList.add('-dark');
       localStorage.setItem('theme', 'dark');
+      setTheme('dark');
     } else {
-      setTheme('light');
-      document.body.classList.remove('dark');
       localStorage.setItem('theme', 'light');
+      setTheme('light');
     }
   };
 
