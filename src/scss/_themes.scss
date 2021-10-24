@@ -7,6 +7,7 @@
 //-------------------
 // Palette
 //-------------------
+
 $white: #ffffff;
 $cornflower-blue: #7b5cfa;
 $heliotrope: #9175ff;
@@ -26,6 +27,9 @@ $dark-orange: #ff9100;
 $white-ice: #f3fdfa;
 $bridal-heath: #fff9f0;
 $athens-gray: #f4f4f5;
+$big-stone: #1a3149;
+$blackcurrant: #332b3f;
+$martinique: #2d314f;
 
 $themes: (
   light: (
@@ -42,11 +46,9 @@ $themes: (
     btn-secondary-label: $ship-cove,
     btn-tertiary-label: $selago,
     btn-danger-label: $white,
-    btn-toggle-theme: $ship-cove,
+    btn-toggle-theme: $selago,
     appbar-bg: $mirage,
     appbar-vertical-divider: $charcoal,
-    list-header-label-primary: $vulcan,
-    list-header-label-secondary: $bali-hai,
     list-item-bg: $white,
     list-item-label-primary: $vulcan,
     list-item-label-secondary: $bali-hai,
@@ -86,21 +88,18 @@ $themes: (
     btn-toggle-theme: $ship-cove,
     appbar-bg: $mirage,
     appbar-vertical-divider: $charcoal,
-    list-header-label-primary: $white,
-    list-header-label-secondary: $selago,
-    list-item-bg: $white,
-    list-item: $mirage,
-    list-item-label-primary: $vulcan,
-    list-item-label-secondary: $selago,
+    list-item-bg: $mirage,
+    list-item-label-primary: $white,
+    list-item-label-secondary: $bali-hai,
     status-badge-paid-label: $eucalyptus,
-    status-badge-paid-bg: $white-ice,
+    status-badge-paid-bg: $big-stone,
     status-badge-paid-circle: $eucalyptus,
     status-badge-pending-label: $dark-orange,
-    status-badge-pending-bg: $dark-orange,
+    status-badge-pending-bg: $blackcurrant,
     status-badge-pending-circle: $dark-orange,
     status-badge-draft-label: $selago,
-    status-badge-draft-bg: $charcoal,
-    status-badge-draft-circle: $charcoal,
+    status-badge-draft-bg: $martinique,
+    status-badge-draft-circle: $selago,
     arrow-icon: $cornflower-blue,
     form-header-primary: $vulcan,
     form-header-secondary: $bali-hai,
