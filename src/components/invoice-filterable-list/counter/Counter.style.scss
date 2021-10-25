@@ -6,9 +6,15 @@
   &__label {
     font-size: rem(20);
     font-weight: bold;
+    @include themed() {
+      color: t('list-item-label-primary');
+    }
   }
   &__count {
     font-size: rem(12);
     font-weight: bold;
+    @include themed() {
+      color: t('list-item-label-secondary');
+    }
   }
 }

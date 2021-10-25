@@ -1,5 +1,12 @@
-select {
-  border: 0px;
-  outline: 0px;
-  background-color: transparent;
+@import '../../../scss/index';
+
+.filterable-list {
+  select {
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    @include themed {
+      color: t('list-item-label-primary');
+    }
+  }
 }

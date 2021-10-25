@@ -5,6 +5,7 @@ import Counter from './counter/Counter';
 import Filter from './filter/Filter';
 import List from './list/List';
 import ActionGroup from './action-group/ActionGroup';
+import AddButton from './add-button/AddButton';
 import './FilterableList.style.scss';
 
 export const Context = React.createContext();
@@ -47,5 +48,6 @@ FilterableList.Counter = Counter;
 FilterableList.Filter = Filter;
 FilterableList.List = List;
 FilterableList.ActionGroup = ActionGroup;
+FilterableList.AddButton = AddButton;
 
 export default FilterableList;
