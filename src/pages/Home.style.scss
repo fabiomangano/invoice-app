@@ -2,12 +2,14 @@
 
 .home {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: inherit;
+  align-items: center;
   width: 100%;
   @include themed {
     background-color: t('app-bg');
+  }
+  @include breakpoint-up($medium) {
+    min-height: inherit;
   }
 }
