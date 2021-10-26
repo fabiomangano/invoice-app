@@ -4,4 +4,9 @@
   &__item {
     margin: rem(16) 0;
   }
+  &__empty {
+    @include themed() {
+      color: t('list-item-label-primary');
+    }
+  }
 }

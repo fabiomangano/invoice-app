@@ -7,11 +7,15 @@ const List = () => {
   const { data } = React.useContext(Context);
   return (
     <ul>
-      {data.map((invoice) => (
-        <li className="list list__item" key={invoice.id}>
-          <Invoice invoice={invoice} />
-        </li>
-      ))}
+      {data.length > 0 ? (
+        data.map((invoice) => (
+          <li className="list list__item" key={invoice.id}>
+            <Invoice invoice={invoice} />
+          </li>
+        ))
+      ) : (
+        <span className="list list__empty">No invoices</span>
+      )}
     </ul>
   );
 };
