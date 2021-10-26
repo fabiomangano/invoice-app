@@ -2,7 +2,7 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Space from '../components/space/Space';
 import { mobile } from '../mediaQueries';
-import FilterableList from '../components/invoice-filterable-list/FilterableList';
+import FilterableList from '../components/filterable-list/FilterableList';
 import invoices from '../../db';
 import './Home.style.scss';
 
