@@ -1,12 +1,13 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import Space from '../components/space/Space';
 import { mobile } from '../mediaQueries';
+import AppContext from '../contexts/AppContext';
+import Space from '../components/space/Space';
 import FilterableList from '../components/filterable-list/FilterableList';
-import invoices from '../../db';
 import './Home.style.scss';
 
 const Home = () => {
+  const invoices = React.useContext(AppContext);
   const isMobile = useMediaQuery(mobile);
   return (
     <div className="home">
