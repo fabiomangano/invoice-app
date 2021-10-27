@@ -8,11 +8,14 @@ const Filter = () => {
   const handleChange = (event) => setCurrentFilter(event.target.value);
 
   return (
-    <select value={filter} onChange={handleChange}>
-      {Object.values(statusFilters).map((curFilter) => (
-        <option key={curFilter}>{curFilter}</option>
-      ))}
-    </select>
+    <div>
+      <span className="filterable-list__label">Filter: </span>
+      <select value={filter} onChange={handleChange}>
+        {Object.values(statusFilters).map((curFilter) => (
+          <option key={curFilter}>{curFilter}</option>
+        ))}
+      </select>
+    </div>
   );
 };
 

@@ -9,4 +9,11 @@
       color: t('list-item-label-primary');
     }
   }
+  &__label {
+    font-weight: bold;
+    font-size: rem(14);
+    @include themed {
+      color: t('list-item-label-primary');
+    }
+  }
 }

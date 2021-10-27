@@ -7,7 +7,7 @@ import FilterableList from '../components/filterable-list/FilterableList';
 import './Home.style.scss';
 
 const Home = () => {
-  const invoices = React.useContext(AppContext);
+  const { invoices } = React.useContext(AppContext);
   const isMobile = useMediaQuery(mobile);
   return (
     <div className="home">
@@ -17,7 +17,8 @@ const Home = () => {
           <FilterableList.Counter />
           <FilterableList.ActionGroup>
             <FilterableList.Filter />
-            <FilterableList.AddButton>Add</FilterableList.AddButton>
+            <span />
+            <span />
           </FilterableList.ActionGroup>
         </FilterableList.Header>
         <FilterableList.List />

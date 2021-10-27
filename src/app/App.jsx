@@ -7,16 +7,19 @@ import Home from '../pages/Home';
 import invoices from '../../db';
 import './App.scss';
 
-const App = () => (
-  <AppContext.Provider value={invoices}>
-    <ThemeProvider>
-      <div className="app">
-        <AppLayout>
-          <Home />
-        </AppLayout>
-      </div>
-    </ThemeProvider>
-  </AppContext.Provider>
-);
+const App = () => {
+  const addInvoice = (invoice) => invoices.push(invoice);
+  return (
+    <AppContext.Provider value={{ invoices, addInvoice }}>
+      <ThemeProvider>
+        <div className="app">
+          <AppLayout>
+            <Home />
+          </AppLayout>
+        </div>
+      </ThemeProvider>
+    </AppContext.Provider>
+  );
+};
 
 export default hot(App);
